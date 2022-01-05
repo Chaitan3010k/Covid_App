@@ -15,10 +15,10 @@ export default class Chart extends Component{
                         datasets: [
                             {
                                 data: [
-                                    Math.random()*100,
-                                    Math.random()*100,
-                                    Math.random()*100,
-                                    Math.random()*100,
+                                   1230,
+                                   380,
+                                    280,
+                                    180,
                                 ],
                             },
                         ],

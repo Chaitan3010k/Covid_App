@@ -94,10 +94,6 @@ renderNoMoreCards(){
 
                     <View style={styles.colContainer}>
                         <Text style={styles.textGlobal}>GLOBAL</Text>
-                        <Text style={styles.textINDIA}>INDIA</Text>
-                        <View style={styles.reloadContainer}>
-                            <Icon name="md-refresh" size={24} color="red"/>
-                        </View>
                     </View>
                 </ImageBackground>
                 <Deck
@@ -110,6 +106,7 @@ renderNoMoreCards(){
                     showsHorizontalScrollIndicator={false}
                     horizontal
                 >
+                    
                     <Cards
                         onPress={()=>this.props.navigation.navigate('Detail')}
                         icon="md-pulse"
@@ -130,7 +127,7 @@ renderNoMoreCards(){
                         number="113 329"
                     />
                 </ScrollView>
-                <View style={{marginBottom:34}}>
+                <View style={{marginBottom:104}}>
                     <Buttons 
                         name="ASYMPTOMATIC"
                         number="1 778"
@@ -139,6 +136,7 @@ renderNoMoreCards(){
                         name="SYMPTOMATIC"
                         number="1 578"
                     />
+                    
 
                 </View>
             </View>

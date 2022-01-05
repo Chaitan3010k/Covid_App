@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import {View,StyleSheet,Image, Text , Button} from 'react-native';
+import {View,StyleSheet,Image, Text } from 'react-native';
 import Icon from '@expo/vector-icons/Ionicons';
 import Chart from '../components/Chart'; 
-import IndiaDetail from '../screens/IndiaDetail' ;
 
-export default class Detail extends Component {
+export default class IndiaDetail extends Component {
     render(){
         return(
             <View style={styles.page}>
@@ -29,13 +28,13 @@ export default class Detail extends Component {
                 </View>
                 <View style={styles.optionCard}>
                     <View style={styles.optionCol}>
-                        <Text style={styles.textLinear}>LINEAR</Text>
+                        <Text style={styles.textLinear}>chaitnaya</Text>
                     </View>
                     <Text style={styles.textLogarthimic}>LOGARTHIMIC</Text>
                 </View>
                 <View style={styles.locationContainer}>
-                    <Text style={styles.textGlobal}>GLOBAL</Text>
-                    <Text style={styles.textINDIA}>INDIA</Text>
+                    <Text style={styles.textINDIA} >INDIA</Text>
+                    
                     <View style={styles.reloadContainer}>
                         <Icon
                             name="md-refresh"
@@ -55,12 +54,10 @@ export default class Detail extends Component {
                             <Text style={{color:"#FFF"}}>i</Text>
                         </View>
                     </View>
-                    <Button  onPress={()=>this.props.navigation.navigate('IndiaDetail')} 
-                    style={styles.btnText}
-                title="India's Graph" >
-                   
-                    </Button>
-                
+
+                    <View style={styles.button}>
+                        <Text style={styles.btnText}>See India's Graphs</Text>
+                    </View>
 
                 </View>
             </View>

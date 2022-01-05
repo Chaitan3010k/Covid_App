@@ -3,7 +3,9 @@ import {createStackNavigator}
     from '@react-navigation/stack';
 import Home from '../screens/Home';
 import Detail from '../screens/Detail';
-import SymoPre from '../screens/SymoPre';
+import IndiaDetail from '../screens/IndiaDetail';
+
+
 
 const Stack = createStackNavigator();
 const screenOptionStyle = {
@@ -21,10 +23,11 @@ const HomeStackNavigator = () => {
                 name = "Detail"
                 component={Detail}
             />
-             <Stack.Screen
-                name = "SymoPre"
-                component={SymoPre}
+                 <Stack.Screen
+                name = "IndiaDetail"
+                component={IndiaDetail}
             />
+           
         </Stack.Navigator>
     )
 }
